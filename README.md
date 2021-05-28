@@ -1,10 +1,20 @@
 # BMI Calculator 💪
 
+
+
+## Our Goal
+
+The objective of this tutorial is to look at how we can customise Flutter Widgets to achieve our own beautiful user interface designs.
+
+
+
 ## What we will create
 
 We’re going to make a Body Mass Index Calculator. It will be a multi screen app with simple functionality but full-on custom styling. Design of the app will be as shown below : 
 
 ![Finished App](https://github.com/londonappbrewery/Images/blob/master/bmi-calc-demo.gif)
+
+
 
 Purpose of app is :
 - How to use Flutter themes to create coherent branding.
