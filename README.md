@@ -2,7 +2,9 @@
 
 ## What we will create
 
-We’re going to make a Body Mass Index Calculator. It will be a multi screen app with simple functionality but full-on custom styling. Design of the app will be as shown below : (https://dribbble.com/shots/4585382-Simple-BMI-Calculator)
+We’re going to make a Body Mass Index Calculator. It will be a multi screen app with simple functionality but full-on custom styling. Design of the app will be as shown below : 
+
+![Finished App](https://github.com/londonappbrewery/Images/blob/master/bmi-calc-demo.gif)
 
 Purpose of app is :
 - How to use Flutter themes to create coherent branding.
