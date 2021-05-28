@@ -16,7 +16,8 @@ We’re going to make a Body Mass Index Calculator. It will be a multi screen ap
 
 
 
-Purpose of app is :
+## Purpose of app is :
+
 - How to use Flutter themes to create coherent branding.
 - How to create multi-page apps using Flutter Routes and Navigator.
 - How to extract and refactor Flutter Widgets with a click of the button.
