@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/calculator_brain.dart';
 import 'package:bmi_calculator/components/bottom_button.dart';
 import 'package:bmi_calculator/components/icon_content.dart';
 import 'package:bmi_calculator/components/reusable_card.dart';
@@ -40,7 +41,7 @@ class _InputPageState extends State<InputPage> {
                         ? kActiveCardColor
                         : kInactiveCardColor,
                     IconContent(FontAwesomeIcons.mars, 'MALE'),
-                    () {
+                        () {
                       setState(() {
                         selectedGender = Gender.male;
                       });
@@ -53,7 +54,7 @@ class _InputPageState extends State<InputPage> {
                         ? kActiveCardColor
                         : kInactiveCardColor,
                     IconContent(FontAwesomeIcons.venus, 'FEMALE'),
-                    () {
+                        () {
                       setState(() {
                         selectedGender = Gender.female;
                       });
@@ -104,7 +105,7 @@ class _InputPageState extends State<InputPage> {
                   )
                 ],
               ),
-              () {},
+                  () {},
             ),
           ),
           Expanded(
@@ -143,7 +144,7 @@ class _InputPageState extends State<InputPage> {
                             ])
                       ],
                     ),
-                    () {},
+                        () {},
                   ),
                 ),
                 Expanded(
@@ -185,7 +186,7 @@ class _InputPageState extends State<InputPage> {
                             ])
                       ],
                     ),
-                    () {},
+                        () {},
                   ),
                 ),
               ],
@@ -193,9 +194,16 @@ class _InputPageState extends State<InputPage> {
           ),
           BottomButtonWidget(
               onTap: () {
+                CalculatorBrain calc = CalculatorBrain(height, weight);
+
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ResultsPage()),
+                  MaterialPageRoute(
+                      builder: (context) => ResultsPage(
+                            calc.calculateBMI(),
+                            calc.getBmiResult(),
+                            calc.getInterpretation(),
+                          )),
                 );
               },
               buttonText: kCalculate)

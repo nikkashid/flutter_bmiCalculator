@@ -22,6 +22,13 @@ const kInactiveTrackColor = Color(0xFF8D8E98);
 const kEnabledThumbRadius = 15.0;
 const kOverlayRadius = 30.0;
 
+//BMI Calculation String
+const kOverweight =
+    "You have higher than normal body weight. Try to exercise more";
+const kNormal = "You have normal body weight. Good job.";
+const kUnderWeight =
+    "You have lower than normal body weight. You can eat a bit more";
+
 const kLabelTextStyle = TextStyle(
   fontSize: 18.0,
   color: Color(0xFF8D8D98),

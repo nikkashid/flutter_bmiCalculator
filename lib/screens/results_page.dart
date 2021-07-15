@@ -5,6 +5,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ResultsPage extends StatelessWidget {
+  final String bmiResult;
+  final String resultText;
+  final String interpretation;
+
+  ResultsPage(this.bmiResult, this.resultText, this.interpretation);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,21 +40,21 @@ class ResultsPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      "Normal",
+                      resultText.toUpperCase(),
                       style: kResultsTextStyle,
                     ),
                     Text(
-                      "18.6",
+                      bmiResult,
                       style: kBMITextStyle,
                     ),
                     Text(
-                      "Text to check the the result of BMI , if the result is true or not",
+                      interpretation,
                       textAlign: TextAlign.center,
                       style: kBodyTextStyle,
                     ),
                   ],
                 ),
-                () {}),
+                    () {}),
           ),
           BottomButtonWidget(
               onTap: () {
