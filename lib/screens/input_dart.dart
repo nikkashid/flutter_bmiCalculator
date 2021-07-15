@@ -41,7 +41,7 @@ class _InputPageState extends State<InputPage> {
                         ? kActiveCardColor
                         : kInactiveCardColor,
                     IconContent(FontAwesomeIcons.mars, 'MALE'),
-                        () {
+                    () {
                       setState(() {
                         selectedGender = Gender.male;
                       });
@@ -105,7 +105,7 @@ class _InputPageState extends State<InputPage> {
                   )
                 ],
               ),
-                  () {},
+              () {},
             ),
           ),
           Expanded(
@@ -144,7 +144,7 @@ class _InputPageState extends State<InputPage> {
                             ])
                       ],
                     ),
-                        () {},
+                    () {},
                   ),
                 ),
                 Expanded(
@@ -186,7 +186,7 @@ class _InputPageState extends State<InputPage> {
                             ])
                       ],
                     ),
-                        () {},
+                    () {},
                   ),
                 ),
               ],

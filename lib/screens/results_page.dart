@@ -54,7 +54,7 @@ class ResultsPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                    () {}),
+                () {}),
           ),
           BottomButtonWidget(
               onTap: () {
