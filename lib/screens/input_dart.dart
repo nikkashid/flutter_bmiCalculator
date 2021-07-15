@@ -54,7 +54,7 @@ class _InputPageState extends State<InputPage> {
                         ? kActiveCardColor
                         : kInactiveCardColor,
                     IconContent(FontAwesomeIcons.venus, 'FEMALE'),
-                        () {
+                    () {
                       setState(() {
                         selectedGender = Gender.female;
                       });
